@@ -598,11 +598,15 @@ const (
 		INSERT INTO whatsmeow_contacts (our_jid, their_jid, business_name) VALUES ($1, $2, $3)
 		ON CONFLICT (our_jid, their_jid) DO UPDATE SET business_name=excluded.business_name
 	`
+	putUsernameQuery = `
+		INSERT INTO whatsmeow_contacts (our_jid, their_jid, username) VALUES ($1, $2, $3)
+		ON CONFLICT (our_jid, their_jid) DO UPDATE SET username=excluded.username
+	`
 	getContactQuery = `
-		SELECT first_name, full_name, push_name, business_name, redacted_phone FROM whatsmeow_contacts WHERE our_jid=$1 AND their_jid=$2
+		SELECT first_name, full_name, push_name, business_name, username, redacted_phone FROM whatsmeow_contacts WHERE our_jid=$1 AND their_jid=$2
 	`
 	getAllContactsQuery = `
-		SELECT their_jid, first_name, full_name, push_name, business_name, redacted_phone FROM whatsmeow_contacts WHERE our_jid=$1
+		SELECT their_jid, first_name, full_name, push_name, business_name, username, redacted_phone FROM whatsmeow_contacts WHERE our_jid=$1
 	`
 )
 
@@ -652,6 +656,27 @@ func (s *SQLStore) PutBusinessName(ctx context.Context, user types.JID, business
 		cached.BusinessName = businessName
 		cached.Found = true
 		return true, previousName, nil
+	}
+	return false, "", nil
+}
+
+func (s *SQLStore) PutUsername(ctx context.Context, user types.JID, username string) (bool, string, error) {
+	s.contactCacheLock.Lock()
+	defer s.contactCacheLock.Unlock()
+
+	cached, err := s.getContact(ctx, user)
+	if err != nil {
+		return false, "", err
+	}
+	if cached.Username != username {
+		_, err = s.db.Exec(ctx, putUsernameQuery, s.JID, user, username)
+		if err != nil {
+			return false, "", err
+		}
+		previousUsername := cached.Username
+		cached.Username = username
+		cached.Found = true
+		return true, previousUsername, nil
 	}
 	return false, "", nil
 }
@@ -750,8 +775,8 @@ func (s *SQLStore) getContact(ctx context.Context, user types.JID) (*types.Conta
 		return cached, nil
 	}
 
-	var first, full, push, business, redactedPhone sql.NullString
-	err := s.db.QueryRow(ctx, getContactQuery, s.JID, user).Scan(&first, &full, &push, &business, &redactedPhone)
+	var first, full, push, business, username, redactedPhone sql.NullString
+	err := s.db.QueryRow(ctx, getContactQuery, s.JID, user).Scan(&first, &full, &push, &business, &username, &redactedPhone)
 	if err != nil && !errors.Is(err, sql.ErrNoRows) {
 		return nil, err
 	}
@@ -761,6 +786,7 @@ func (s *SQLStore) getContact(ctx context.Context, user types.JID) (*types.Conta
 		FullName:      full.String,
 		PushName:      push.String,
 		BusinessName:  business.String,
+		Username:      username.String,
 		RedactedPhone: redactedPhone.String,
 	}
 	s.contactCache[user] = info
@@ -784,8 +810,8 @@ type contactTuple struct {
 
 var convertContactRow = dbutil.ConvertRowFn[*contactTuple](func(rows dbutil.Scannable) (*contactTuple, error) {
 	var jid types.JID
-	var first, full, push, business, redactedPhone sql.NullString
-	err := rows.Scan(&jid, &first, &full, &push, &business, &redactedPhone)
+	var first, full, push, business, username, redactedPhone sql.NullString
+	err := rows.Scan(&jid, &first, &full, &push, &business, &username, &redactedPhone)
 	if err != nil {
 		return nil, fmt.Errorf("error scanning row: %w", err)
 	}
@@ -797,6 +823,7 @@ var convertContactRow = dbutil.ConvertRowFn[*contactTuple](func(rows dbutil.Scan
 			FullName:      full.String,
 			PushName:      push.String,
 			BusinessName:  business.String,
+			Username:      username.String,
 			RedactedPhone: redactedPhone.String,
 		},
 	}, nil

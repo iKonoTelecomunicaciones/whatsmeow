@@ -77,6 +77,7 @@ type ContactInfo struct {
 	FullName     string
 	PushName     string
 	BusinessName string
+	Username     string
 	// Only for LID members encountered in groups, the phone number in the form "+1∙∙∙∙∙∙∙∙80"
 	RedactedPhone string
 }
@@ -97,6 +98,7 @@ type IsOnWhatsAppResponse struct {
 	IsIn  bool   // Whether the phone is registered or not.
 
 	PhoneNumber JID
+	Username    string
 
 	VerifiedName *VerifiedName // If the phone is a business, the verified business details.
 }

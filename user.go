@@ -217,6 +217,22 @@ func (cli *Client) IsOnWhatsApp(ctx context.Context, phones []string) ([]types.I
 		info.IsIn = contactNode.AttrGetter().String("type") == "in"
 		contactQuery, _ := contactNode.Content.([]byte)
 		info.Query = strings.TrimSuffix(string(contactQuery), querySuffix)
+		usernameQuery, _ := child.GetChildByTag("username").Content.([]byte)
+		info.Username = string(usernameQuery)
+		if info.Username != "" {
+			lid := types.EmptyJID
+			pn := types.EmptyJID
+			if info.JID.Server == types.HiddenUserServer {
+				lid = info.JID
+				pn = info.PhoneNumber
+			} else if !info.JID.IsEmpty() && cli.Store.LIDs != nil {
+				pn = info.JID
+				lid, _ = cli.Store.LIDs.GetLIDForPN(ctx, pn)
+			}
+			if !lid.IsEmpty() {
+				cli.updateUsername(ctx, lid, pn, info.Username)
+			}
+		}
 		output = append(output, info)
 	}
 	if len(lidEntries) > 0 {
@@ -731,6 +747,29 @@ func (cli *Client) updateBusinessName(ctx context.Context, user, userAlt types.J
 			OldBusinessName: previousName,
 			NewBusinessName: name,
 		})
+	}
+}
+
+func (cli *Client) updateUsername(ctx context.Context, user, userAlt types.JID, username string) {
+	if cli.Store.Contacts == nil {
+		return
+	}
+	user = user.ToNonAD()
+	changed, previousUsername, err := cli.Store.Contacts.PutUsername(ctx, user, username)
+	if err != nil {
+		cli.Log.Errorf("Failed to save username of %s in device store: %v", user, err)
+	} else if changed {
+		userAlt = userAlt.ToNonAD()
+		if userAlt.IsEmpty() {
+			userAlt, _ = cli.Store.GetAltJID(ctx, user)
+		}
+		if !userAlt.IsEmpty() {
+			_, _, err = cli.Store.Contacts.PutUsername(ctx, userAlt, username)
+			if err != nil {
+				cli.Log.Errorf("Failed to save username of %s in device store: %v", userAlt, err)
+			}
+		}
+		cli.Log.Debugf("Username of %s changed from %s to %s", user, previousUsername, username)
 	}
 }
 

@@ -102,6 +102,7 @@ func (rpe RedactedPhoneEntry) GetMassInsertValues() [2]any {
 type ContactStore interface {
 	PutPushName(ctx context.Context, user types.JID, pushName string) (bool, string, error)
 	PutBusinessName(ctx context.Context, user types.JID, businessName string) (bool, string, error)
+	PutUsername(ctx context.Context, user types.JID, username string) (bool, string, error)
 	PutContactName(ctx context.Context, user types.JID, fullName, firstName string) error
 	PutAllContactNames(ctx context.Context, contacts []ContactEntry) error
 	PutManyRedactedPhones(ctx context.Context, entries []RedactedPhoneEntry) error

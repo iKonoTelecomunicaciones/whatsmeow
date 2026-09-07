@@ -291,6 +291,11 @@ func (cli *Client) dispatchAppState(ctx context.Context, name appstate.WAPatchNa
 		eventToDispatch = &events.Contact{JID: jid, Timestamp: ts, Action: act, FromFullSync: fullSync}
 		if cli.Store.Contacts != nil {
 			storeUpdateError = cli.Store.Contacts.PutContactName(ctx, jid, act.GetFirstName(), act.GetFullName())
+			if storeUpdateError == nil {
+				if username := act.GetUsername(); username != "" {
+					_, _, storeUpdateError = cli.Store.Contacts.PutUsername(ctx, jid, username)
+				}
+			}
 		}
 	case appstate.IndexClearChat:
 		act := mutation.Action.GetClearChatAction()

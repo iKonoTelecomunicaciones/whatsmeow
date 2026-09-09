@@ -12,10 +12,10 @@ import (
 	"errors"
 	"fmt"
 
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
-	"github.com/iKonoTelecomunicaciones/store"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/types/events"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/store"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types/events"
 )
 
 const InviteLinkPrefix = "https://chat.whatsapp.com/"

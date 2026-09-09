@@ -14,15 +14,15 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 
-	waAICommon "github.com/iKonoTelecomunicaciones/proto/waAICommon"
-	waAICommonDeprecated "github.com/iKonoTelecomunicaciones/proto/waAICommonDeprecated"
-	waAdv "github.com/iKonoTelecomunicaciones/proto/waAdv"
-	waAea "github.com/iKonoTelecomunicaciones/proto/waAea"
-	waCommon "github.com/iKonoTelecomunicaciones/proto/waCommon"
-	waCompanionReg "github.com/iKonoTelecomunicaciones/proto/waCompanionReg"
-	waMmsRetry "github.com/iKonoTelecomunicaciones/proto/waMmsRetry"
-	waServerSync "github.com/iKonoTelecomunicaciones/proto/waServerSync"
-	waStatusAttributions "github.com/iKonoTelecomunicaciones/proto/waStatusAttributions"
+	waAICommon "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waAICommon"
+	waAICommonDeprecated "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waAICommonDeprecated"
+	waAdv "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waAdv"
+	waAea "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waAea"
+	waCommon "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waCommon"
+	waCompanionReg "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waCompanionReg"
+	waMmsRetry "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waMmsRetry"
+	waServerSync "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waServerSync"
+	waStatusAttributions "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waStatusAttributions"
 )
 
 const (
@@ -26556,7 +26556,7 @@ const file_waE2E_WAWebProtobufsE2E_proto_rawDesc = "" +
 	"\bKeepType\x12\x15\n" +
 	"\x11UNKNOWN_KEEP_TYPE\x10\x00\x12\x10\n" +
 	"\fKEEP_FOR_ALL\x10\x01\x12\x15\n" +
-	"\x11UNDO_KEEP_FOR_ALL\x10\x02B!Z\x1fgithub.com/iKonoTelecomunicaciones/proto/waE2E"
+	"\x11UNDO_KEEP_FOR_ALL\x10\x02B!Z\x1fgithub.com/iKonoTelecomunicaciones/whatsmeow/proto/waE2E"
 
 var (
 	file_waE2E_WAWebProtobufsE2E_proto_rawDescOnce sync.Once

@@ -1,6 +1,6 @@
 syntax = "proto2";
 package WAWebLabyrinthWaWasm;
-option go_package = "github.com/iKonoTelecomunicaciones/proto/waWebLabyrinthWaWasm";
+option go_package = "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waWebLabyrinthWaWasm";
 
 message CreateBackupInput {
 	required string recoveryCode = 1;

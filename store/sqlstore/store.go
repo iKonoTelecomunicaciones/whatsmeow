@@ -22,9 +22,9 @@ import (
 	"go.mau.fi/util/exslices"
 	"go.mau.fi/util/exsync"
 
-	"github.com/iKonoTelecomunicaciones/store"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/util/keys"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/store"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/util/keys"
 )
 
 // ErrInvalidLength is returned by some database getters if the database returned a byte array with an unexpected length.

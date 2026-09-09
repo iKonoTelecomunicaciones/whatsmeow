@@ -12,14 +12,14 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	armadillo "github.com/iKonoTelecomunicaciones/proto"
-	"github.com/iKonoTelecomunicaciones/proto/armadilloutil"
-	"github.com/iKonoTelecomunicaciones/proto/instamadilloTransportPayload"
-	"github.com/iKonoTelecomunicaciones/proto/waCommon"
-	"github.com/iKonoTelecomunicaciones/proto/waMsgApplication"
-	"github.com/iKonoTelecomunicaciones/proto/waMsgTransport"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/types/events"
+	armadillo "github.com/iKonoTelecomunicaciones/whatsmeow/proto"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/armadilloutil"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/instamadilloTransportPayload"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waCommon"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waMsgApplication"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waMsgTransport"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types/events"
 )
 
 func (cli *Client) handleDecryptedArmadillo(ctx context.Context, info *types.MessageInfo, decrypted []byte, retryCount int) (handlerFailed, protobufFailed bool) {

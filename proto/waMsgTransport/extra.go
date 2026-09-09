@@ -1,9 +1,9 @@
 package waMsgTransport
 
 import (
-	"github.com/iKonoTelecomunicaciones/proto/armadilloutil"
-	"github.com/iKonoTelecomunicaciones/proto/instamadilloTransportPayload"
-	"github.com/iKonoTelecomunicaciones/proto/waMsgApplication"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/armadilloutil"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/instamadilloTransportPayload"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waMsgApplication"
 )
 
 const (

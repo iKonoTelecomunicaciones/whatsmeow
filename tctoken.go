@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"time"
 
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
-	"github.com/iKonoTelecomunicaciones/types"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
 )
 
 const (

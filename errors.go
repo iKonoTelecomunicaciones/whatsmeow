@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"net/http"
 
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
 )
 
 // Miscellaneous errors

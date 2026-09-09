@@ -1,4 +1,4 @@
-module github.com/iKonoTelecomunicaciones
+module github.com/iKonoTelecomunicaciones/whatsmeow
 
 go 1.26.0
 

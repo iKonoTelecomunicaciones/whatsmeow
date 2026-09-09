@@ -14,8 +14,8 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 
-	waCommon "github.com/iKonoTelecomunicaciones/proto/waCommon"
-	waE2E "github.com/iKonoTelecomunicaciones/proto/waE2E"
+	waCommon "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waCommon"
+	waE2E "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waE2E"
 )
 
 const (
@@ -4818,7 +4818,7 @@ const file_waWeb_WAWebProtobufsWeb_proto_rawDesc = "" +
 	"\x18ScheduledMessageMetadata\x12 \n" +
 	"\vrevealKeyID\x18\x01 \x01(\tR\vrevealKeyID\x12\x1c\n" +
 	"\trevealKey\x18\x02 \x01(\fR\trevealKey\x12$\n" +
-	"\rscheduledTime\x18\x03 \x01(\x04R\rscheduledTimeB!Z\x1fgithub.com/iKonoTelecomunicaciones/proto/waWeb"
+	"\rscheduledTime\x18\x03 \x01(\x04R\rscheduledTimeB!Z\x1fgithub.com/iKonoTelecomunicaciones/whatsmeow/proto/waWeb"
 
 var (
 	file_waWeb_WAWebProtobufsWeb_proto_rawDescOnce sync.Once

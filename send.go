@@ -29,12 +29,12 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
-	"github.com/iKonoTelecomunicaciones/proto/waAICommon"
-	"github.com/iKonoTelecomunicaciones/proto/waCommon"
-	"github.com/iKonoTelecomunicaciones/proto/waE2E"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/types/events"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waAICommon"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waCommon"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waE2E"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types/events"
 )
 
 const WebMessageIDPrefix = "3EB0"

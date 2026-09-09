@@ -14,11 +14,11 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 
-	waChatLockSettings "github.com/iKonoTelecomunicaciones/proto/waChatLockSettings"
-	waCommon "github.com/iKonoTelecomunicaciones/proto/waCommon"
-	waE2E "github.com/iKonoTelecomunicaciones/proto/waE2E"
-	waSyncAction "github.com/iKonoTelecomunicaciones/proto/waSyncAction"
-	waWeb "github.com/iKonoTelecomunicaciones/proto/waWeb"
+	waChatLockSettings "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waChatLockSettings"
+	waCommon "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waCommon"
+	waE2E "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waE2E"
+	waSyncAction "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waSyncAction"
+	waWeb "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waWeb"
 )
 
 const (
@@ -2617,7 +2617,7 @@ const file_waHistorySync_WAWebProtobufsHistorySync_proto_rawDesc = "" +
 	"\bE2EE_MSG\x10\x01\x12\x0e\n" +
 	"\n" +
 	"NE2EE_SELF\x10\x02\x12\x0f\n" +
-	"\vNE2EE_OTHER\x10\x03B)Z'github.com/iKonoTelecomunicaciones/proto/waHistorySync"
+	"\vNE2EE_OTHER\x10\x03B)Z'github.com/iKonoTelecomunicaciones/whatsmeow/proto/waHistorySync"
 
 var (
 	file_waHistorySync_WAWebProtobufsHistorySync_proto_rawDescOnce sync.Once

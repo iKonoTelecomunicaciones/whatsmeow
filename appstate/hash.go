@@ -14,9 +14,9 @@ import (
 	"fmt"
 	"hash"
 
-	"github.com/iKonoTelecomunicaciones/appstate/lthash"
-	"github.com/iKonoTelecomunicaciones/proto/waServerSync"
-	"github.com/iKonoTelecomunicaciones/proto/waSyncAction"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/appstate/lthash"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waServerSync"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waSyncAction"
 )
 
 type Mutation struct {

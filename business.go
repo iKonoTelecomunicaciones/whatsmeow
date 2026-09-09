@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"strconv"
 
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
-	"github.com/iKonoTelecomunicaciones/types"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
 )
 
 // GetOrderDetails fetches the details of a specific order using its ID and token.

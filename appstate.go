@@ -17,13 +17,13 @@ import (
 	"go.mau.fi/util/exslices"
 	"go.mau.fi/util/ptr"
 
-	"github.com/iKonoTelecomunicaciones/appstate"
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
-	"github.com/iKonoTelecomunicaciones/proto/waE2E"
-	"github.com/iKonoTelecomunicaciones/proto/waServerSync"
-	"github.com/iKonoTelecomunicaciones/store"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/types/events"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/appstate"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waE2E"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waServerSync"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/store"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types/events"
 )
 
 // FetchAppState fetches updates to the given type of app state. If fullSync is true, the current

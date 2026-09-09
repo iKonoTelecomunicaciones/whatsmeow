@@ -14,11 +14,11 @@ import (
 	"go.mau.fi/libsignal/ecc"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
-	"github.com/iKonoTelecomunicaciones/proto/waCert"
-	"github.com/iKonoTelecomunicaciones/proto/waWa6"
-	"github.com/iKonoTelecomunicaciones/socket"
-	"github.com/iKonoTelecomunicaciones/util/keys"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waCert"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waWa6"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/socket"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/util/keys"
 )
 
 const NoiseHandshakeResponseTimeout = 20 * time.Second

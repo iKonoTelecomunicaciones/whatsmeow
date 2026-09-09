@@ -11,8 +11,8 @@ import (
 	"errors"
 	"time"
 
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/util/keys"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/util/keys"
 )
 
 type NoopStore struct {

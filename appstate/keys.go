@@ -12,9 +12,9 @@ import (
 	"encoding/base64"
 	"sync"
 
-	"github.com/iKonoTelecomunicaciones/store"
-	"github.com/iKonoTelecomunicaciones/util/hkdfutil"
-	waLog "github.com/iKonoTelecomunicaciones/util/log"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/store"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/util/hkdfutil"
+	waLog "github.com/iKonoTelecomunicaciones/whatsmeow/util/log"
 )
 
 // WAPatchName represents a type of app state patch.

@@ -5,8 +5,8 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/iKonoTelecomunicaciones/binary/token"
-	"github.com/iKonoTelecomunicaciones/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/binary/token"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
 )
 
 type binaryEncoder struct {

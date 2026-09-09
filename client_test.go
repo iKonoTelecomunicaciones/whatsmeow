@@ -13,10 +13,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	whatsmeow "github.com/iKonoTelecomunicaciones"
-	"github.com/iKonoTelecomunicaciones/store/sqlstore"
-	"github.com/iKonoTelecomunicaciones/types/events"
-	waLog "github.com/iKonoTelecomunicaciones/util/log"
+	whatsmeow "github.com/iKonoTelecomunicaciones/whatsmeow"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/store/sqlstore"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types/events"
+	waLog "github.com/iKonoTelecomunicaciones/whatsmeow/util/log"
 )
 
 func eventHandler(evt any) {

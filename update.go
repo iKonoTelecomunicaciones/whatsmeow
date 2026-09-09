@@ -14,8 +14,8 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/iKonoTelecomunicaciones/socket"
-	"github.com/iKonoTelecomunicaciones/store"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/socket"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/store"
 )
 
 var clientVersionRegex = regexp.MustCompile(`"client_revision":(\d+),`)

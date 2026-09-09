@@ -14,7 +14,7 @@ import (
 
 	"go.mau.fi/util/jsontime"
 
-	"github.com/iKonoTelecomunicaciones/proto/waE2E"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waE2E"
 )
 
 type NewsletterVerificationState string

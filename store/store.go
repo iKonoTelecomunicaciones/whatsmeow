@@ -14,10 +14,10 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/iKonoTelecomunicaciones/proto/waAdv"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/util/keys"
-	waLog "github.com/iKonoTelecomunicaciones/util/log"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waAdv"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/util/keys"
+	waLog "github.com/iKonoTelecomunicaciones/whatsmeow/util/log"
 )
 
 type IdentityStore interface {

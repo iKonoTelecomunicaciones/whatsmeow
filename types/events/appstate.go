@@ -9,9 +9,9 @@ package events
 import (
 	"time"
 
-	"github.com/iKonoTelecomunicaciones/appstate"
-	"github.com/iKonoTelecomunicaciones/proto/waSyncAction"
-	"github.com/iKonoTelecomunicaciones/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/appstate"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waSyncAction"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
 )
 
 // Contact is emitted when an entry in the user's contact list is modified from another device.

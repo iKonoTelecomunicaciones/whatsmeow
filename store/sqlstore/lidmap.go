@@ -20,8 +20,8 @@ import (
 	"go.mau.fi/util/dbutil"
 	"go.mau.fi/util/exslices"
 
-	"github.com/iKonoTelecomunicaciones/store"
-	"github.com/iKonoTelecomunicaciones/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/store"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
 )
 
 type CachedLIDMap struct {

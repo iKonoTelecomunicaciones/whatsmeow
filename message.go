@@ -27,15 +27,15 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/iKonoTelecomunicaciones/appstate"
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
-	"github.com/iKonoTelecomunicaciones/proto/waE2E"
-	"github.com/iKonoTelecomunicaciones/proto/waHistorySync"
-	"github.com/iKonoTelecomunicaciones/proto/waLidMigrationSyncPayload"
-	"github.com/iKonoTelecomunicaciones/proto/waWeb"
-	"github.com/iKonoTelecomunicaciones/store"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/types/events"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/appstate"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waE2E"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waHistorySync"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waLidMigrationSyncPayload"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waWeb"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/store"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types/events"
 )
 
 var pbSerializer = store.SignalProtobufSerializer

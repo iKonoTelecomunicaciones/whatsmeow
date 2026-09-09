@@ -1,6 +1,6 @@
 syntax = "proto2";
 package WAWebProtobufsEphemeral;
-option go_package = "github.com/iKonoTelecomunicaciones/proto/waEphemeral";
+option go_package = "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waEphemeral";
 
 message EphemeralSetting {
 	optional sfixed32 duration = 1;

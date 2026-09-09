@@ -29,17 +29,17 @@ import (
 	"golang.org/x/net/proxy"
 	"golang.org/x/sync/semaphore"
 
-	"github.com/iKonoTelecomunicaciones/appstate"
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
-	"github.com/iKonoTelecomunicaciones/proto/waE2E"
-	"github.com/iKonoTelecomunicaciones/proto/waWa6"
-	"github.com/iKonoTelecomunicaciones/proto/waWeb"
-	"github.com/iKonoTelecomunicaciones/socket"
-	"github.com/iKonoTelecomunicaciones/store"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/types/events"
-	"github.com/iKonoTelecomunicaciones/util/keys"
-	waLog "github.com/iKonoTelecomunicaciones/util/log"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/appstate"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waE2E"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waWa6"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waWeb"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/socket"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/store"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types/events"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/util/keys"
+	waLog "github.com/iKonoTelecomunicaciones/whatsmeow/util/log"
 )
 
 // EventHandler is a function that can handle events from WhatsApp.

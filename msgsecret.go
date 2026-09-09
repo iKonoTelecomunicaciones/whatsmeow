@@ -17,12 +17,12 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/iKonoTelecomunicaciones/proto/waCommon"
-	"github.com/iKonoTelecomunicaciones/proto/waE2E"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/types/events"
-	"github.com/iKonoTelecomunicaciones/util/gcmutil"
-	"github.com/iKonoTelecomunicaciones/util/hkdfutil"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waCommon"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/proto/waE2E"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types/events"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/util/gcmutil"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/util/hkdfutil"
 )
 
 type MsgSecretType string

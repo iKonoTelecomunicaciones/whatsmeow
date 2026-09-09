@@ -17,9 +17,9 @@ import (
 	"go.mau.fi/libsignal/keys/prekey"
 	"go.mau.fi/libsignal/util/optional"
 
-	waBinary "github.com/iKonoTelecomunicaciones/binary"
-	"github.com/iKonoTelecomunicaciones/types"
-	"github.com/iKonoTelecomunicaciones/util/keys"
+	waBinary "github.com/iKonoTelecomunicaciones/whatsmeow/binary"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/util/keys"
 )
 
 const (

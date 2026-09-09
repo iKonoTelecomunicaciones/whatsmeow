@@ -1,6 +1,6 @@
 syntax = "proto2";
 package WAWebProtobufsGroupHistory;
-option go_package = "github.com/iKonoTelecomunicaciones/proto/waGroupHistory";
+option go_package = "github.com/iKonoTelecomunicaciones/whatsmeow/proto/waGroupHistory";
 
 import "waE2E/WAWebProtobufsE2E.proto";
 import "waCommon/WACommon.proto";

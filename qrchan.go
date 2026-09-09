@@ -14,8 +14,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/iKonoTelecomunicaciones/types/events"
-	waLog "github.com/iKonoTelecomunicaciones/util/log"
+	"github.com/iKonoTelecomunicaciones/whatsmeow/types/events"
+	waLog "github.com/iKonoTelecomunicaciones/whatsmeow/util/log"
 )
 
 type QRChannelItem struct {

@@ -1735,7 +1735,7 @@ const file_waWebLabyrinthWaWasm_WAWebLabyrinthWaWasm_proto_rawDesc = "" +
 	"\x10orfThreadIDInput\x18\x04 \x01(\v2&.WAWebLabyrinthWaWasm.OrfThreadIdInputH\x00R\x10orfThreadIDInput\x12c\n" +
 	"\x15deriveMessageKeyInput\x18\x05 \x01(\v2+.WAWebLabyrinthWaWasm.DeriveMessageKeyInputH\x00R\x15deriveMessageKeyInput\x12T\n" +
 	"\x10rotateEpochInput\x18\x06 \x01(\v2&.WAWebLabyrinthWaWasm.RotateEpochInputH\x00R\x10rotateEpochInputB\x0e\n" +
-	"\fcommandInputB0Z.go.mau.fi/whatsmeow/proto/waWebLabyrinthWaWasm"
+	"\fcommandInputB0Z.github.com/iKonoTelecomunicaciones/proto/waWebLabyrinthWaWasm"
 
 var (
 	file_waWebLabyrinthWaWasm_WAWebLabyrinthWaWasm_proto_rawDescOnce sync.Once

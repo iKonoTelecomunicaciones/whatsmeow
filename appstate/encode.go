@@ -9,11 +9,11 @@ import (
 
 	"google.golang.org/protobuf/proto"
 
-	"go.mau.fi/whatsmeow/proto/waCommon"
-	"go.mau.fi/whatsmeow/proto/waServerSync"
-	"go.mau.fi/whatsmeow/proto/waSyncAction"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/util/cbcutil"
+	"github.com/iKonoTelecomunicaciones/proto/waCommon"
+	"github.com/iKonoTelecomunicaciones/proto/waServerSync"
+	"github.com/iKonoTelecomunicaciones/proto/waSyncAction"
+	"github.com/iKonoTelecomunicaciones/types"
+	"github.com/iKonoTelecomunicaciones/util/cbcutil"
 )
 
 // MutationInfo contains information about a single mutation to the app state.

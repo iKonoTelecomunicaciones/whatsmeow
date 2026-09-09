@@ -17,14 +17,14 @@ import (
 	"go.mau.fi/libsignal/ecc"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/proto/waAdv"
-	"go.mau.fi/whatsmeow/proto/waCompanionReg"
-	"go.mau.fi/whatsmeow/proto/waWa6"
-	"go.mau.fi/whatsmeow/store"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
-	"go.mau.fi/whatsmeow/util/keys"
+	waBinary "github.com/iKonoTelecomunicaciones/binary"
+	"github.com/iKonoTelecomunicaciones/proto/waAdv"
+	"github.com/iKonoTelecomunicaciones/proto/waCompanionReg"
+	"github.com/iKonoTelecomunicaciones/proto/waWa6"
+	"github.com/iKonoTelecomunicaciones/store"
+	"github.com/iKonoTelecomunicaciones/types"
+	"github.com/iKonoTelecomunicaciones/types/events"
+	"github.com/iKonoTelecomunicaciones/util/keys"
 )
 
 var (

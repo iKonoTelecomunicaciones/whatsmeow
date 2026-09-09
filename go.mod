@@ -1,4 +1,4 @@
-module go.mau.fi/whatsmeow
+module github.com/iKonoTelecomunicaciones
 
 go 1.26.0
 

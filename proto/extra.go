@@ -3,13 +3,13 @@ package armadillo
 import (
 	"google.golang.org/protobuf/proto"
 
-	"go.mau.fi/whatsmeow/proto/instamadilloAddMessage"
-	"go.mau.fi/whatsmeow/proto/instamadilloDeleteMessage"
-	"go.mau.fi/whatsmeow/proto/instamadilloSupplementMessage"
-	"go.mau.fi/whatsmeow/proto/waArmadilloApplication"
-	"go.mau.fi/whatsmeow/proto/waCommon"
-	"go.mau.fi/whatsmeow/proto/waConsumerApplication"
-	"go.mau.fi/whatsmeow/proto/waMultiDevice"
+	"github.com/iKonoTelecomunicaciones/proto/instamadilloAddMessage"
+	"github.com/iKonoTelecomunicaciones/proto/instamadilloDeleteMessage"
+	"github.com/iKonoTelecomunicaciones/proto/instamadilloSupplementMessage"
+	"github.com/iKonoTelecomunicaciones/proto/waArmadilloApplication"
+	"github.com/iKonoTelecomunicaciones/proto/waCommon"
+	"github.com/iKonoTelecomunicaciones/proto/waConsumerApplication"
+	"github.com/iKonoTelecomunicaciones/proto/waMultiDevice"
 )
 
 type MessageApplicationSub interface {

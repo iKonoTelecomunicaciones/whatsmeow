@@ -23,15 +23,15 @@ import (
 	"go.mau.fi/util/random"
 	"google.golang.org/protobuf/proto"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	armadillo "go.mau.fi/whatsmeow/proto"
-	"go.mau.fi/whatsmeow/proto/waArmadilloApplication"
-	"go.mau.fi/whatsmeow/proto/waCommon"
-	"go.mau.fi/whatsmeow/proto/waConsumerApplication"
-	"go.mau.fi/whatsmeow/proto/waMsgApplication"
-	"go.mau.fi/whatsmeow/proto/waMsgTransport"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
+	waBinary "github.com/iKonoTelecomunicaciones/binary"
+	armadillo "github.com/iKonoTelecomunicaciones/proto"
+	"github.com/iKonoTelecomunicaciones/proto/waArmadilloApplication"
+	"github.com/iKonoTelecomunicaciones/proto/waCommon"
+	"github.com/iKonoTelecomunicaciones/proto/waConsumerApplication"
+	"github.com/iKonoTelecomunicaciones/proto/waMsgApplication"
+	"github.com/iKonoTelecomunicaciones/proto/waMsgTransport"
+	"github.com/iKonoTelecomunicaciones/types"
+	"github.com/iKonoTelecomunicaciones/types/events"
 )
 
 const FBMessageVersion = 3

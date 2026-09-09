@@ -14,18 +14,18 @@ import (
 
 	"go.mau.fi/util/jsontime"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	armadillo "go.mau.fi/whatsmeow/proto"
-	"go.mau.fi/whatsmeow/proto/instamadilloTransportPayload"
-	"go.mau.fi/whatsmeow/proto/waArmadilloApplication"
-	"go.mau.fi/whatsmeow/proto/waCompanionReg"
-	"go.mau.fi/whatsmeow/proto/waConsumerApplication"
-	"go.mau.fi/whatsmeow/proto/waE2E"
-	"go.mau.fi/whatsmeow/proto/waHistorySync"
-	"go.mau.fi/whatsmeow/proto/waMsgApplication"
-	"go.mau.fi/whatsmeow/proto/waMsgTransport"
-	"go.mau.fi/whatsmeow/proto/waWeb"
-	"go.mau.fi/whatsmeow/types"
+	waBinary "github.com/iKonoTelecomunicaciones/binary"
+	armadillo "github.com/iKonoTelecomunicaciones/proto"
+	"github.com/iKonoTelecomunicaciones/proto/instamadilloTransportPayload"
+	"github.com/iKonoTelecomunicaciones/proto/waArmadilloApplication"
+	"github.com/iKonoTelecomunicaciones/proto/waCompanionReg"
+	"github.com/iKonoTelecomunicaciones/proto/waConsumerApplication"
+	"github.com/iKonoTelecomunicaciones/proto/waE2E"
+	"github.com/iKonoTelecomunicaciones/proto/waHistorySync"
+	"github.com/iKonoTelecomunicaciones/proto/waMsgApplication"
+	"github.com/iKonoTelecomunicaciones/proto/waMsgTransport"
+	"github.com/iKonoTelecomunicaciones/proto/waWeb"
+	"github.com/iKonoTelecomunicaciones/types"
 )
 
 // QR is emitted after connecting when there's no session data in the device store.

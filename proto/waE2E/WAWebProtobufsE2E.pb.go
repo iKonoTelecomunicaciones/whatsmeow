@@ -14,15 +14,15 @@ import (
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 
-	waAICommon "go.mau.fi/whatsmeow/proto/waAICommon"
-	waAICommonDeprecated "go.mau.fi/whatsmeow/proto/waAICommonDeprecated"
-	waAdv "go.mau.fi/whatsmeow/proto/waAdv"
-	waAea "go.mau.fi/whatsmeow/proto/waAea"
-	waCommon "go.mau.fi/whatsmeow/proto/waCommon"
-	waCompanionReg "go.mau.fi/whatsmeow/proto/waCompanionReg"
-	waMmsRetry "go.mau.fi/whatsmeow/proto/waMmsRetry"
-	waServerSync "go.mau.fi/whatsmeow/proto/waServerSync"
-	waStatusAttributions "go.mau.fi/whatsmeow/proto/waStatusAttributions"
+	waAICommon "github.com/iKonoTelecomunicaciones/proto/waAICommon"
+	waAICommonDeprecated "github.com/iKonoTelecomunicaciones/proto/waAICommonDeprecated"
+	waAdv "github.com/iKonoTelecomunicaciones/proto/waAdv"
+	waAea "github.com/iKonoTelecomunicaciones/proto/waAea"
+	waCommon "github.com/iKonoTelecomunicaciones/proto/waCommon"
+	waCompanionReg "github.com/iKonoTelecomunicaciones/proto/waCompanionReg"
+	waMmsRetry "github.com/iKonoTelecomunicaciones/proto/waMmsRetry"
+	waServerSync "github.com/iKonoTelecomunicaciones/proto/waServerSync"
+	waStatusAttributions "github.com/iKonoTelecomunicaciones/proto/waStatusAttributions"
 )
 
 const (
@@ -26556,7 +26556,7 @@ const file_waE2E_WAWebProtobufsE2E_proto_rawDesc = "" +
 	"\bKeepType\x12\x15\n" +
 	"\x11UNKNOWN_KEEP_TYPE\x10\x00\x12\x10\n" +
 	"\fKEEP_FOR_ALL\x10\x01\x12\x15\n" +
-	"\x11UNDO_KEEP_FOR_ALL\x10\x02B!Z\x1fgo.mau.fi/whatsmeow/proto/waE2E"
+	"\x11UNDO_KEEP_FOR_ALL\x10\x02B!Z\x1fgithub.com/iKonoTelecomunicaciones/proto/waE2E"
 
 var (
 	file_waE2E_WAWebProtobufsE2E_proto_rawDescOnce sync.Once
@@ -26862,46 +26862,46 @@ var file_waE2E_WAWebProtobufsE2E_proto_goTypes = []any{
 	(*ContextInfo_PartiallySelectedContent)(nil),                                                                                // 286: WAWebProtobufsE2E.ContextInfo.PartiallySelectedContent
 	(*ContextInfo_FeatureEligibilities)(nil),                                                                                    // 287: WAWebProtobufsE2E.ContextInfo.FeatureEligibilities
 	(*ContextInfo_QuestionReplyQuotedMessage)(nil),                                                                              // 288: WAWebProtobufsE2E.ContextInfo.QuestionReplyQuotedMessage
-	(*ContextInfo_UTMInfo)(nil),                                                                                                 // 289: WAWebProtobufsE2E.ContextInfo.UTMInfo
-	(*ContextInfo_BusinessMessageForwardInfo)(nil),                                                                              // 290: WAWebProtobufsE2E.ContextInfo.BusinessMessageForwardInfo
-	(*ContextInfo_BusinessInteractionPills_UnauthenticatedBusinessMetadata)(nil),                                                // 291: WAWebProtobufsE2E.ContextInfo.BusinessInteractionPills.UnauthenticatedBusinessMetadata
-	(*ContextInfo_BusinessInteractionPills_SignedPayload)(nil),                                                                  // 292: WAWebProtobufsE2E.ContextInfo.BusinessInteractionPills.SignedPayload
-	(*ContextInfo_BusinessInteractionPills_Pill)(nil),                                                                           // 293: WAWebProtobufsE2E.ContextInfo.BusinessInteractionPills.Pill
-	(*ContextInfo_DataSharingContext_Parameters)(nil),                                                                           // 294: WAWebProtobufsE2E.ContextInfo.DataSharingContext.Parameters
-	(*HydratedTemplateButton_HydratedURLButton)(nil),                                                                            // 295: WAWebProtobufsE2E.HydratedTemplateButton.HydratedURLButton
-	(*HydratedTemplateButton_HydratedCallButton)(nil),                                                                           // 296: WAWebProtobufsE2E.HydratedTemplateButton.HydratedCallButton
-	(*HydratedTemplateButton_HydratedQuickReplyButton)(nil),                                                                     // 297: WAWebProtobufsE2E.HydratedTemplateButton.HydratedQuickReplyButton
-	(*PaymentBackground_MediaData)(nil),                                                                                         // 298: WAWebProtobufsE2E.PaymentBackground.MediaData
-	(*PollResultSnapshotMessage_PollVote)(nil),                                                                                  // 299: WAWebProtobufsE2E.PollResultSnapshotMessage.PollVote
-	(*PollCreationMessage_Option)(nil),                                                                                          // 300: WAWebProtobufsE2E.PollCreationMessage.Option
-	(*ProductMessage_ProductSnapshot)(nil),                                                                                      // 301: WAWebProtobufsE2E.ProductMessage.ProductSnapshot
-	(*ProductMessage_CatalogSnapshot)(nil),                                                                                      // 302: WAWebProtobufsE2E.ProductMessage.CatalogSnapshot
-	(*TemplateMessage_HydratedFourRowTemplate)(nil),                                                                             // 303: WAWebProtobufsE2E.TemplateMessage.HydratedFourRowTemplate
-	(*TemplateMessage_FourRowTemplate)(nil),                                                                                     // 304: WAWebProtobufsE2E.TemplateMessage.FourRowTemplate
-	(*TemplateButton_CallButton)(nil),                                                                                           // 305: WAWebProtobufsE2E.TemplateButton.CallButton
-	(*TemplateButton_URLButton)(nil),                                                                                            // 306: WAWebProtobufsE2E.TemplateButton.URLButton
-	(*TemplateButton_QuickReplyButton)(nil),                                                                                     // 307: WAWebProtobufsE2E.TemplateButton.QuickReplyButton
-	(*UrlTrackingMap_UrlTrackingMapElement)(nil),                                                                                // 308: WAWebProtobufsE2E.UrlTrackingMap.UrlTrackingMapElement
-	(*waCommon.MessageKey)(nil),                                                                                                 // 309: WACommon.MessageKey
-	(*waAICommon.BotAgentMetadata)(nil),                                                                                         // 310: WAWebProtobufsAICommon.BotAgentMetadata
-	(*waAICommon.BotFeedbackMessage)(nil),                                                                                       // 311: WAWebProtobufsAICommon.BotFeedbackMessage
-	(*waCommon.LimitSharing)(nil),                                                                                               // 312: WACommon.LimitSharing
-	(*waAICommon.AIMediaCollectionMessage)(nil),                                                                                 // 313: WAWebProtobufsAICommon.AIMediaCollectionMessage
-	(*waAICommon.AIMetadataOperation)(nil),                                                                                      // 314: WAWebProtobufsAICommon.AIMetadataOperation
-	(*waServerSync.CoexStateSync)(nil),                                                                                          // 315: WAWebProtobufsServerSync.CoexStateSync
-	(*waAICommon.ForwardedAIBotMessageInfo)(nil),                                                                                // 316: WAWebProtobufsAICommon.ForwardedAIBotMessageInfo
-	(*waStatusAttributions.StatusAttribution)(nil),                                                                              // 317: WAStatusAttributions.StatusAttribution
-	(*waAICommon.BotMessageSharingInfo)(nil),                                                                                    // 318: WAWebProtobufsAICommon.BotMessageSharingInfo
-	(*waAICommon.AIProvenance)(nil),                                                                                             // 319: WAWebProtobufsAICommon.AIProvenance
-	(*waAICommon.BotMetadata)(nil),                                                                                              // 320: WAWebProtobufsAICommon.BotMetadata
-	(*waAea.NonE2EEAttestation)(nil),                                                                                            // 321: WAWebProtobufsAea.NonE2EEAttestation
-	(waAdv.ADVEncryptionType)(0),                                                                                                // 322: WAAdv.ADVEncryptionType
-	(waAICommonDeprecated.AIRichResponseMessageType)(0),                                                                         // 323: WAAICommonDeprecated.AIRichResponseMessageType
-	(*waAICommonDeprecated.AIRichResponseSubMessage)(nil),                                                                       // 324: WAAICommonDeprecated.AIRichResponseSubMessage
-	(*waAICommon.AIRichResponseUnifiedResponse)(nil),                                                                            // 325: WAWebProtobufsAICommon.AIRichResponseUnifiedResponse
-	(waMmsRetry.MediaRetryNotification_ResultType)(0),                                                                           // 326: WAMmsRetry.MediaRetryNotification.ResultType
-	(*waCompanionReg.DeviceProps_HistorySyncConfig)(nil),                                                                        // 327: WACompanionReg.DeviceProps.HistorySyncConfig
-	(*waAICommon.BotSignatureVerificationMetadata)(nil),                                                                         // 328: WAWebProtobufsAICommon.BotSignatureVerificationMetadata
+	(*ContextInfo_UTMInfo)(nil),                                                  // 289: WAWebProtobufsE2E.ContextInfo.UTMInfo
+	(*ContextInfo_BusinessMessageForwardInfo)(nil),                               // 290: WAWebProtobufsE2E.ContextInfo.BusinessMessageForwardInfo
+	(*ContextInfo_BusinessInteractionPills_UnauthenticatedBusinessMetadata)(nil), // 291: WAWebProtobufsE2E.ContextInfo.BusinessInteractionPills.UnauthenticatedBusinessMetadata
+	(*ContextInfo_BusinessInteractionPills_SignedPayload)(nil),                   // 292: WAWebProtobufsE2E.ContextInfo.BusinessInteractionPills.SignedPayload
+	(*ContextInfo_BusinessInteractionPills_Pill)(nil),                            // 293: WAWebProtobufsE2E.ContextInfo.BusinessInteractionPills.Pill
+	(*ContextInfo_DataSharingContext_Parameters)(nil),                            // 294: WAWebProtobufsE2E.ContextInfo.DataSharingContext.Parameters
+	(*HydratedTemplateButton_HydratedURLButton)(nil),                             // 295: WAWebProtobufsE2E.HydratedTemplateButton.HydratedURLButton
+	(*HydratedTemplateButton_HydratedCallButton)(nil),                            // 296: WAWebProtobufsE2E.HydratedTemplateButton.HydratedCallButton
+	(*HydratedTemplateButton_HydratedQuickReplyButton)(nil),                      // 297: WAWebProtobufsE2E.HydratedTemplateButton.HydratedQuickReplyButton
+	(*PaymentBackground_MediaData)(nil),                                          // 298: WAWebProtobufsE2E.PaymentBackground.MediaData
+	(*PollResultSnapshotMessage_PollVote)(nil),                                   // 299: WAWebProtobufsE2E.PollResultSnapshotMessage.PollVote
+	(*PollCreationMessage_Option)(nil),                                           // 300: WAWebProtobufsE2E.PollCreationMessage.Option
+	(*ProductMessage_ProductSnapshot)(nil),                                       // 301: WAWebProtobufsE2E.ProductMessage.ProductSnapshot
+	(*ProductMessage_CatalogSnapshot)(nil),                                       // 302: WAWebProtobufsE2E.ProductMessage.CatalogSnapshot
+	(*TemplateMessage_HydratedFourRowTemplate)(nil),                              // 303: WAWebProtobufsE2E.TemplateMessage.HydratedFourRowTemplate
+	(*TemplateMessage_FourRowTemplate)(nil),                                      // 304: WAWebProtobufsE2E.TemplateMessage.FourRowTemplate
+	(*TemplateButton_CallButton)(nil),                                            // 305: WAWebProtobufsE2E.TemplateButton.CallButton
+	(*TemplateButton_URLButton)(nil),                                             // 306: WAWebProtobufsE2E.TemplateButton.URLButton
+	(*TemplateButton_QuickReplyButton)(nil),                                      // 307: WAWebProtobufsE2E.TemplateButton.QuickReplyButton
+	(*UrlTrackingMap_UrlTrackingMapElement)(nil),                                 // 308: WAWebProtobufsE2E.UrlTrackingMap.UrlTrackingMapElement
+	(*waCommon.MessageKey)(nil),                                                  // 309: WACommon.MessageKey
+	(*waAICommon.BotAgentMetadata)(nil),                                          // 310: WAWebProtobufsAICommon.BotAgentMetadata
+	(*waAICommon.BotFeedbackMessage)(nil),                                        // 311: WAWebProtobufsAICommon.BotFeedbackMessage
+	(*waCommon.LimitSharing)(nil),                                                // 312: WACommon.LimitSharing
+	(*waAICommon.AIMediaCollectionMessage)(nil),                                  // 313: WAWebProtobufsAICommon.AIMediaCollectionMessage
+	(*waAICommon.AIMetadataOperation)(nil),                                       // 314: WAWebProtobufsAICommon.AIMetadataOperation
+	(*waServerSync.CoexStateSync)(nil),                                           // 315: WAWebProtobufsServerSync.CoexStateSync
+	(*waAICommon.ForwardedAIBotMessageInfo)(nil),                                 // 316: WAWebProtobufsAICommon.ForwardedAIBotMessageInfo
+	(*waStatusAttributions.StatusAttribution)(nil),                               // 317: WAStatusAttributions.StatusAttribution
+	(*waAICommon.BotMessageSharingInfo)(nil),                                     // 318: WAWebProtobufsAICommon.BotMessageSharingInfo
+	(*waAICommon.AIProvenance)(nil),                                              // 319: WAWebProtobufsAICommon.AIProvenance
+	(*waAICommon.BotMetadata)(nil),                                               // 320: WAWebProtobufsAICommon.BotMetadata
+	(*waAea.NonE2EEAttestation)(nil),                                             // 321: WAWebProtobufsAea.NonE2EEAttestation
+	(waAdv.ADVEncryptionType)(0),                                                 // 322: WAAdv.ADVEncryptionType
+	(waAICommonDeprecated.AIRichResponseMessageType)(0),                          // 323: WAAICommonDeprecated.AIRichResponseMessageType
+	(*waAICommonDeprecated.AIRichResponseSubMessage)(nil),                        // 324: WAAICommonDeprecated.AIRichResponseSubMessage
+	(*waAICommon.AIRichResponseUnifiedResponse)(nil),                             // 325: WAWebProtobufsAICommon.AIRichResponseUnifiedResponse
+	(waMmsRetry.MediaRetryNotification_ResultType)(0),                            // 326: WAMmsRetry.MediaRetryNotification.ResultType
+	(*waCompanionReg.DeviceProps_HistorySyncConfig)(nil),                         // 327: WACompanionReg.DeviceProps.HistorySyncConfig
+	(*waAICommon.BotSignatureVerificationMetadata)(nil),                          // 328: WAWebProtobufsAICommon.BotSignatureVerificationMetadata
 }
 var file_waE2E_WAWebProtobufsE2E_proto_depIdxs = []int32{
 	8,   // 0: WAWebProtobufsE2E.StatusLinkPreviewMetadata.style:type_name -> WAWebProtobufsE2E.StatusLinkPreviewMetadata.Style

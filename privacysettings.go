@@ -11,9 +11,9 @@ import (
 	"strconv"
 	"time"
 
-	waBinary "go.mau.fi/whatsmeow/binary"
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
+	waBinary "github.com/iKonoTelecomunicaciones/binary"
+	"github.com/iKonoTelecomunicaciones/types"
+	"github.com/iKonoTelecomunicaciones/types/events"
 )
 
 // TryFetchPrivacySettings will fetch the user's privacy settings, either from the in-memory cache or from the server.

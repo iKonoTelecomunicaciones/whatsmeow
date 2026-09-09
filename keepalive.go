@@ -11,8 +11,8 @@ import (
 	"math/rand/v2"
 	"time"
 
-	"go.mau.fi/whatsmeow/types"
-	"go.mau.fi/whatsmeow/types/events"
+	"github.com/iKonoTelecomunicaciones/types"
+	"github.com/iKonoTelecomunicaciones/types/events"
 )
 
 var (

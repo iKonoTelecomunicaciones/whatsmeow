@@ -2630,7 +2630,7 @@ const file_waConsumerApplicationParameterised_WAConsumerApplicationParameterised
 	"\x10degreesLongitude\x18\x02 \x01(\x01R\x10degreesLongitude\x12\x12\n" +
 	"\x04name\x18\x03 \x01(\tR\x04name\x1aN\n" +
 	"\fMediaPayload\x12>\n" +
-	"\bprotocol\x18\x01 \x01(\v2\".WACommonParameterised.SubProtocolR\bprotocolB>Z<github.com/iKonoTelecomunicaciones/whatsmeow/proto/waConsumerApplicationParameterised"
+	"\bprotocol\x18\x01 \x01(\v2\".WACommonParameterised.SubProtocolR\bprotocolBWZUgithub.com/iKonoTelecomunicaciones/whatsmeow/proto/waConsumerApplicationParameterised"
 
 var (
 	file_waConsumerApplicationParameterised_WAConsumerApplicationParameterised_proto_rawDescOnce sync.Once

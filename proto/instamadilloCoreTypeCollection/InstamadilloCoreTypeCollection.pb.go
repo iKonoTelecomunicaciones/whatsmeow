@@ -84,7 +84,7 @@ const file_instamadilloCoreTypeCollection_InstamadilloCoreTypeCollection_proto_r
 	"\n" +
 	"Collection\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\x126\n" +
-	"\x05media\x18\x02 \x03(\v2 .InstamadilloCoreTypeMedia.MediaR\x05mediaB:Z8github.com/iKonoTelecomunicaciones/whatsmeow/proto/instamadilloCoreTypeCollection"
+	"\x05media\x18\x02 \x03(\v2 .InstamadilloCoreTypeMedia.MediaR\x05mediaBSZQgithub.com/iKonoTelecomunicaciones/whatsmeow/proto/instamadilloCoreTypeCollection"
 
 var (
 	file_instamadilloCoreTypeCollection_InstamadilloCoreTypeCollection_proto_rawDescOnce sync.Once

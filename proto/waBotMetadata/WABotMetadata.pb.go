@@ -5057,7 +5057,7 @@ const file_waBotMetadata_WABotMetadata_proto_rawDesc = "" +
 	"USER_INPUT\x10\x03\x12\r\n" +
 	"\tEMU_FLASH\x10\x04\x12\x16\n" +
 	"\x12EMU_FLASH_FOLLOWUP\x10\x05\x12\t\n" +
-	"\x05VOICE\x10\x06B)Z'github.com/iKonoTelecomunicaciones/whatsmeow/proto/waBotMetadata"
+	"\x05VOICE\x10\x06BBZ@github.com/iKonoTelecomunicaciones/whatsmeow/proto/waBotMetadata"
 
 var (
 	file_waBotMetadata_WABotMetadata_proto_rawDescOnce sync.Once

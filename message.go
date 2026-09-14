@@ -58,6 +58,9 @@ func (cli *Client) handleEncryptedMessage(ctx context.Context, node *waBinary.No
 	if len(info.PushName) > 0 && info.PushName != "-" && (cli.MessengerConfig == nil || info.PushName != "username") {
 		go cli.updatePushName(ctx, info.Sender, info.SenderAlt, info, info.PushName)
 	}
+	if len(info.Username) > 0 {
+		go cli.updateUsername(ctx, info.Sender, info.SenderAlt, info.Username)
+	}
 	if info.Sender.Server == types.NewsletterServer {
 		var cancelled bool
 		defer cli.maybeDeferredAck(ctx, node)(&cancelled)
@@ -232,6 +235,7 @@ func (cli *Client) parseMessageInfo(node *waBinary.Node) (*types.MessageInfo, er
 	info.ServerID = types.MessageServerID(ag.OptionalInt("server_id"))
 	info.Timestamp = ag.UnixTime("t")
 	info.PushName = ag.OptionalString("notify")
+	info.Username = ag.OptionalString("username")
 	info.Category = ag.OptionalString("category")
 	info.Type = ag.OptionalString("type")
 	info.Edit = types.EditAttribute(ag.OptionalString("edit"))

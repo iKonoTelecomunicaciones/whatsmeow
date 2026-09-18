@@ -99,6 +99,7 @@ type MessageInfo struct {
 	ServerID  MessageServerID
 	Type      string
 	PushName  string
+	Username  string
 	Timestamp time.Time
 	Category  string
 	Multicast bool
